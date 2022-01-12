@@ -867,13 +867,18 @@ function ifflag () {
 // 食事場、花瓶を置く
 scene.onOverlapTile(SpriteKind.Player, assets.tile`hana-okubasyo`, function (sprite, location) {
     if (controller.A.isPressed()) {
-        if (tsukue == 0 && water == 1) {
-            game.showLongText("花の入った花瓶を机に置いた", DialogLayout.Bottom)
-            tiles.setTileAt(tiles.getTileLocation(7, 8), assets.tile`myTile23`)
-            tsukue = 1
-            TheLastRoom()
-        } else if (tsukue == 1 && water == 1) {
-            game.showLongText("キレイなバラが咲いている", DialogLayout.Bottom)
+        if (mySprite.x > 100) {
+            if (tsukue == 0 && water == 1) {
+                game.showLongText("花の入った花瓶を机に置いた", DialogLayout.Bottom)
+                tiles.setTileAt(tiles.getTileLocation(7, 8), assets.tile`myTile23`)
+                tsukue = 1
+                TheLastRoom()
+            } else if (tsukue == 1 && water == 1) {
+                game.showLongText("キレイなバラが咲いている", DialogLayout.Bottom)
+                pause(500)
+            }
+        } else {
+            game.showLongText("日誌が置いてある", DialogLayout.Full)
             pause(500)
         }
     }
@@ -1215,6 +1220,25 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`kuro-zet1`, function (sprite,
         })
     }
 })
+scene.onOverlapTile(SpriteKind.Player, assets.tile`WhoAndMemo`, function (sprite, location) {
+    if (controller.A.isPressed()) {
+        if (idou == 0) {
+            game.showLongText("日誌が置いてある", DialogLayout.Full)
+        } else if (idou == 2) {
+            if (mySprite.y > 100) {
+                game.showLongText("aaaaa", DialogLayout.Full)
+            } else {
+                game.showLongText("日誌が置いてある", DialogLayout.Full)
+            }
+        } else if (idou == 4) {
+            if (mySprite.y > 100) {
+                game.showLongText("「本当の私は誰だ」と書かれている", DialogLayout.Bottom)
+            } else {
+                game.showLongText("日誌が置いてある", DialogLayout.Full)
+            }
+        }
+    }
+})
 // 食事場所and棚を移動させるやつ
 scene.onOverlapTile(SpriteKind.Player, assets.tile`mesi-ido`, function (sprite, location) {
     if (controller.A.isPressed()) {
@@ -1276,6 +1300,7 @@ let mySprite3: Sprite = null
 let mySprite2: Sprite = null
 let Mathar: Sprite = null
 let mySprite: Sprite = null
+let lastKey = 0
 let fire = 0
 let machi = 0
 let tsukue = 0
@@ -1285,7 +1310,6 @@ let secret = 0
 let light2 = 0
 let light1 = 0
 let SensurOsu = 0
-let lastKey = 0
 let osiire = 0
 let idou = 0
 let ikikaeri = 0
@@ -1294,7 +1318,6 @@ scene.setBackgroundColor(6)
 ikikaeri = 0
 idou = 0
 osiire = 0
-lastKey = 0
 SensurOsu = 0
 light1 = 0
 light2 = 0
@@ -1304,4 +1327,5 @@ water = 0
 tsukue = 0
 machi = 0
 fire = 0
+lastKey = 0
 start1()

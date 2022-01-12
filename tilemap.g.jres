@@ -760,39 +760,17 @@
         "tilemapTile": true,
         "displayName": "hito3"
     },
+    "tile104": {
+        "data": "hwQQABAAAAC9u7u7u/3Mz727u7u7/czPvbu/u7v9zM+9+/G/u/3Mz70fEfu7/czP/REf+7z9zM8fH/HLz/3Mzx/xEfy8/czPHxG/z7v9zM/9sfu8u/3Mz72/z7u7/czPvfu8u7v9zM+9u7u7u/3Mz727u7u7/czM3d3d3d39zMz//////////w==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true,
+        "displayName": "nai-tukue0"
+    },
     "tile103": {
         "data": "hwQQABAAAAD/z//P/8//z//P/8//z//P/8//z//P/8//z//P/8z/z//P/8//z//P/8//z//P/8//z//P/8//z//P/8//z//P/8//z//P/8//z//P/8//z//P/8//z//P/8//z//P/8//z//P/8//z//P/8//z//Pz8//z//P/8//z//P/8//zw==",
         "mimeType": "image/x-mkcd-f4",
         "tilemapTile": true,
-        "displayName": "who"
-    },
-    "レベル2": {
-        "id": "レベル2",
-        "mimeType": "application/mkcd-tilemap",
-        "data": "MTAwYzAwMGYwMDA1MDUwNTA2MDgwODA4MDcwNTA1MDUwNTAxMDEwYzBjMGEwYjA5MGMwYzAxMDEwMTAwMDAwMjBjMGMwYzBjMGMwNDAwMDAwMDAwMDAwMDAyMGMwYzBjMGMwMDAwMDAwMDAwMDAwMDAwMGMwYzBjMGMwZjAwMDAwMDAwMDAwMDAwMDIwYzBjMGMwYzBmMDAwMDAwMDAwMDAwMDAwMDBlMGMwYzBkMDAwMDAwMDAwMDAwMDAwMDAwMGUwZDExMDAwMDAwMDAwMDAwMDAwMDAwMTAwMDEyMDAwMDAwMDAwMDAwMDAwMDEwMDAwMDAzMDAwMDAwMDAwMDAwMDAxMDAwMDAxMjAwMDAwMDAwMDAwMDAwMTAwMDAwMDAxMjAwMDAwMDAwMDAwMDEwMDAwMDAwMDAwMDExMDAwMDAwMDAwMDEzMDAwMDAwMDAwMDEyMDAwMDAwMDAwMDAwMTMwMDAwMDAwMDEyMDAwMDIyMjIwMDIwMjIyMjIyMDAwMDAwMjAyMjIyMDAwMDAwMjAyMjIyMDIwMDAwMjIyMjIyMjIwMDAwMjAyMjIyMjIwMDAwMDAyMjIyMjIyMjAwMDAyMjIyMjIyMjAyMDAyMjIyMjIyMjAyMDAyMjIyMjIyMjAwMDAyMjIyMjIwMjAwMjAyMjIyMjIwMDAwMjAyMjIyMDIwMDAwMDAyMjIyMDIwMDAwMDAyMjIyMjIwMDAwMDAyMg==",
-        "tileset": [
-            "myTiles.transparency16",
-            "sprites.dungeon.hazardHole",
-            "sprites.builtin.oceanSand13",
-            "sprites.builtin.oceanDepths10",
-            "sprites.builtin.oceanSand15",
-            "myTiles.tile4",
-            "myTiles.tile28",
-            "myTiles.tile32",
-            "myTiles.tile33",
-            "myTiles.tile34",
-            "myTiles.tile35",
-            "myTiles.tile36",
-            "myTiles.tile37",
-            "myTiles.tile38",
-            "myTiles.tile39",
-            "myTiles.tile40",
-            "myTiles.tile43",
-            "myTiles.tile44",
-            "myTiles.tile41",
-            "myTiles.tile125"
-        ],
-        "displayName": "miti"
+        "displayName": "WhoAndMemo"
     },
     "レベル8": {
         "id": "レベル8",
@@ -856,36 +834,78 @@
         ],
         "displayName": "home"
     },
-    "レベル6": {
-        "id": "レベル6",
+    "レベル2": {
+        "id": "レベル2",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAwYTAwMGEwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDIwMzAwMDAwMDAxMDEwMTAxMTEwMDAwMDAwMDBhMDEwMTAxMDEwOTA3MDQwNTA0MTAwMTAxMDEwMTA4MDUwNTA1MGUwZjAxMDEwMTAxMDUwNDA1MDcwYzBkMDEwMTAxMDEwNTA1MDUwNTA1MDUwMTAxMDEwMTA3MDUwNTA0MDUwOTAxMDEwMTAxMDYwNzA0MDUwNTA5MDEwMTAxMDEwMTAxMDEwMTBiMDEwMTAxMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjAwMDAyMjIyMDIwMDIyMjIyMjAwMjAyMjIyMjIwMDAwMDAyMjIyMDIwMDIwMjIyMjIyMDAyMDIyMjIyMjIyMjAyMg==",
+        "data": "MTAwYzAwMGYwMDA1MDUwNTA2MDgwODA4MDcwNTA1MDUwNTAxMDEwYzBjMGEwYjA5MGMwYzAxMDEwMTAwMDAwMjBjMGMwYzBjMGMwNDAwMDAwMDAwMDAwMDAyMGMwYzBjMGMwMDAwMDAwMDAwMDAwMDAwMGMwYzBjMGMwZjAwMDAwMDAwMDAwMDAwMDIwYzBjMGMwYzBmMDAwMDAwMDAwMDAwMDAwMDBlMGMwYzBkMDAwMDAwMDAwMDAwMDAwMDAwMGUwZDExMDAwMDAwMDAwMDAwMDAwMDAwMTAwMDEyMDAwMDAwMDAwMDAwMDAwMDEwMDAwMDAzMDAwMDAwMDAwMDAwMDAxMDAwMDAxMjAwMDAwMDAwMDAwMDAwMTAwMDAwMDAxMjAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDExMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDEyMDAwMDAwMDAwMDAwMTMwMDAwMDAwMDEyMDAwMDIyMjIwMDIwMjIyMjIyMDAwMDAwMjAyMjIyMDAwMDAwMjAyMjIyMDIwMDAwMjIyMjIyMjIwMDAwMjAyMjIyMjIwMDAwMDAyMjIyMjIyMjAwMDAyMjIyMjIyMjAyMDAyMjIyMjIyMjAyMDAyMjIyMjIyMjAwMDAyMjIyMjIwMjAwMjAyMjIyMjIwMDAwMjAyMjIyMjIwMDAwMDAyMjIyMjIwMDAwMDAyMjIyMjIwMDAwMDAyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.dungeon.hazardHole",
+            "sprites.builtin.oceanSand13",
+            "sprites.builtin.oceanDepths10",
+            "sprites.builtin.oceanSand15",
+            "myTiles.tile4",
+            "myTiles.tile28",
+            "myTiles.tile32",
+            "myTiles.tile33",
+            "myTiles.tile34",
+            "myTiles.tile35",
+            "myTiles.tile36",
+            "myTiles.tile37",
+            "myTiles.tile38",
+            "myTiles.tile39",
+            "myTiles.tile40",
+            "myTiles.tile43",
+            "myTiles.tile44",
+            "myTiles.tile41",
+            "myTiles.tile125",
+            "myTiles.tile53",
+            "myTiles.tile54"
+        ],
+        "displayName": "miti"
+    },
+    "レベル3": {
+        "id": "レベル3",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxNjAwMTEwMDAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTA1MDAwMDA1MDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDcwYjBhMDcwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwNzA4MDkwNzAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTA3MDcwNjA2MDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDAwMDAwMDAwMDAwMDcwNjA3MDcwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwNTBlMDUwMjA0MDMwNzA3MDcwNzA1MGYwZTA1MDAwMjAzMDUwMTAxMDEwMTA4MTQxMzA3MDcwNzA3MGIwYTA3MDcwODEzMDcwNzE4MTgwNzAxMDEwMTAxMDcwNzA3MDcwNzA3MDcwYzBkMDcwNzA3MDYwNjA3MDcwNzA3MDEwMTAxMDExNTA3MDcwNjA2MDcwNzBjMGQwNzA2MDcwNjA3MDcwNjA3MDYwMTAxMDEwMTE2MTcwNzA3MTgwNjA3MDgwOTA3MDcwNzFjMDcwNzA3MDcwNzAxMDEwMTAxMTUxMDExMTExOTA3MDcwNzA3MDcxMDExMWQwNjA3MTAxMTEyMDEwMTAxMDEwMTAxMDEwMTAxMDEwNzA3MDcwNjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTA3MDcwNzA3MDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDAwMDAwMDAwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMWExYTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMDAwMDIyMjIyMjIyMjIyMjIyMjIyMjAwMDAyMjIyMjIyMjIyMjIyMjIyMjIwMDAwMjIyMjIyMjIyMjIyMjIyMjIyMDAwMDIyMjIyMjIyMjIyMjIyMjIyMjAwMDAyMjIyMjIyMjIyMjIwMDAwMDAwMDAwMDAwMDAwMDAyMjIyMDAwMDAwMDAwMDAwMDAwMDAwMjIyMjAyMDAwMDAwMDAwMDAwMDAwMDIyMjIyMjAwMDAwMDAwMDAwMDAwMDAyMjIyMjIyMjAyMDAwMDIyMDIyMDIyMjIyMjIyMjIyMjAwMDAyMjIyMjIyMjIyMjIyMjIyMjIwMDAwMjIyMjIyMjIyMjIyMjIyMjIyMDAwMDIyMjIyMjIyMjIyMjIyMjIyMjAwMDAyMjIyMjIyMjIyMjIyMjIyMjIwMjIwMjIyMjIyMjIyMg==",
         "tileset": [
             "myTiles.transparency16",
             "myTiles.tile5",
             "myTiles.tile46",
             "myTiles.tile47",
+            "myTiles.tile45",
+            "myTiles.tile48",
             "myTiles.tile51",
             "myTiles.tile52",
+            "myTiles.tile56",
+            "myTiles.tile57",
+            "myTiles.tile58",
+            "myTiles.tile59",
+            "myTiles.tile62",
+            "myTiles.tile63",
+            "myTiles.tile64",
+            "myTiles.tile66",
             "myTiles.tile67",
+            "myTiles.tile68",
+            "myTiles.tile69",
+            "myTiles.tile92",
+            "myTiles.tile94",
             "myTiles.tile75",
             "myTiles.tile76",
             "myTiles.tile79",
-            "myTiles.tile86",
-            "myTiles.tile93",
-            "myTiles.tile101",
-            "myTiles.tile106",
-            "myTiles.tile107",
-            "myTiles.tile109",
             "myTiles.tile19",
-            "myTiles.tile48"
+            "myTiles.tile42",
+            "myTiles.tile33",
+            "myTiles.tile53",
+            "myTiles.tile103",
+            "myTiles.tile104"
         ],
-        "displayName": "sooko"
+        "displayName": "yakata"
     },
     "レベル4": {
         "id": "レベル4",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAwZjAwMGYwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzA0MDAwMDExMTIxMDAwMDAwMzA0MDEwMTAxMDEwMDAwMDUwNTExMTIxMDA1MDUwMDAwMDEwMTAxMDEwYzBkMDgwODBlMmEwZjA4MDgwYzBkMDEwMTAxMDEwYTAyMDIwMjAyMjkwMjAyMDIwMjIwMDEwMTAxMDEwYTAyMDIwMjFiMjExYjAyMDIwMjBiMDEwMTAxMDEwYTAyMTcxOTE5MTkxOTE5MTgwMjBiMDEwMTAxMDEwYTI3MjgxZDFkMWQxZDFkMTMyNDBiMDEwMTAxMDEwYTI2MjMxZDFkMWQxZDFkMjIyNTBiMDEwMTAxMDEwYTAyMTQxNjFhMTYxYTE2MTUwMjBiMDEwMTAxMDEwYTAyMDIwMjFjMjExYzAyMDIwMjBiMDEwMTAxMDEwNjA5MDkwOTA5MDkwOTA5MDkwOTA3MDEwMTAxMDEwMTFmMWUwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwMDIyMDIyMDIyMjIwMjAwMDAwMDAwMDAyMjIyMDAwMDAyMDIwMDIwMjIwMjIwMjIyMjIyMDAyMjIyMjAyMjIyMjIyMjIwMjIwMjIwMjIyMjIyMDAyMjIyMDAyMjIyMjIwMjIwMjIwMjAwMDAwMDAwMDAyMjIyMDAwMDAwMDAwMDIwMjIyMjAwMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMDI=",
+        "data": "MTAwZjAwMGYwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMzA0MDAwMDExMTIxMDAwMDAwMzA0MDEwMTAxMDEwMDAwMDUwMDExMTIxMDAwMDUwMDAwMDEwMTAxMDEwYzJiMDgwODBlMmEwZjA4MDgwYzBkMDEwMTAxMDEwYTIxMDIwMjAyMjkwMjAyMDIwMjIwMDEwMTAxMDEwYTAyMDIwMjFiMjExYjAyMDIwMjBiMDEwMTAxMDEwYTAyMTcxOTE5MTkxOTE5MTgwMjBiMDEwMTAxMDEwYTI3MjgxZDFkMWQxZDFkMTMyNDBiMDEwMTAxMDEwYTI2MjMxZDFkMWQxZDFkMjIyNTBiMDEwMTAxMDEwYTAyMTQxNjFhMTYxYTE2MTUwMjBiMDEwMTAxMDEwYTAyMDIwMjFjMjExYzAyMDIwMjBiMDEwMTAxMDEwNjA5MDkwOTA5MDkwOTA5MDkwOTA3MDEwMTAxMDEwMTFmMWUwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwMDIyMDIyMDIyMjIwMjAwMDAwMDAwMDAyMjIyMDAwMDAyMDIwMDIwMjIwMjIwMjIyMjIyMDAyMjIyMjAyMjIyMjIyMjIwMjIwMjIwMjIyMjIyMDAyMjIyMDAyMjIyMjIwMjIwMjIwMjAwMDAwMDAwMDAyMjIyMDAwMDAwMDAwMDIwMjIyMjAwMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMDI=",
         "tileset": [
             "myTiles.transparency16",
             "myTiles.tile5",
@@ -929,14 +949,43 @@
             "myTiles.tile98",
             "myTiles.tile99",
             "myTiles.tile54",
-            "myTiles.tile65"
+            "myTiles.tile65",
+            "myTiles.tile104"
         ],
         "displayName": "lunch"
+    },
+    "レベル6": {
+        "id": "レベル6",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAwYTAwMGEwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAwMDIwMzAwMDAwMDAxMDEwMTAxMTEwMDAwMDAwMDBhMDEwMTAxMDEwOTEyMTMwNTA0MTAwMTAxMDEwMTA4MTMwNTA1MGUwZjAxMDEwMTAxMDUwNDA1MDcwYzBkMDEwMTAxMDEwNDA1MDUwNTA1MDUwMTAxMDEwMTA1MDcwNTA0MDUwOTAxMDEwMTAxMDYxMjEzMDUwNTA5MDEwMTAxMDEwMTAxMDEwMTBiMDEwMTAxMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjAwMDAyMjIyMDIwMDIyMjIyMjAwMjAyMjIyMjIwMDAwMDAyMjIyMjAwMDIwMjIyMjIyMDAyMDIyMjIyMjIyMjAyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "myTiles.tile5",
+            "myTiles.tile46",
+            "myTiles.tile47",
+            "myTiles.tile51",
+            "myTiles.tile52",
+            "myTiles.tile67",
+            "myTiles.tile75",
+            "myTiles.tile76",
+            "myTiles.tile79",
+            "myTiles.tile86",
+            "myTiles.tile93",
+            "myTiles.tile101",
+            "myTiles.tile106",
+            "myTiles.tile107",
+            "myTiles.tile109",
+            "myTiles.tile19",
+            "myTiles.tile48",
+            "myTiles.tile104",
+            "myTiles.tile103"
+        ],
+        "displayName": "sooko"
     },
     "レベル7": {
         "id": "レベル7",
         "mimeType": "application/mkcd-tilemap",
-        "data": "MTAwYzAwMGEwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMTQxNjE1MTAxNzE3MDAxNzE3MTAwMTAxMTExMzEyMDAxODE4MjExODE4MDAwMTAxMGMwYjBkMDMyMjIzMjYyNDI1MDMwMTAxMDMwZTA0MDMwODA5MDkwOTA5MDcwMTAxMDMwMzA0MDQyMDAyMWMxYjAyMWYwMTAxMDQwMzA0MDQxZDAyMTkxYTAyMWUwMTAxMDQwNDA0MDMwNTBhMGEwYTBhMDYwMTAxMGMwYjBkMDQwNDA0MDQwYzBiMGQwMTAxMDEwMTAxMDEwMzBmMDEwMTAxMDEwMTIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwMDAwMDAyMjAyMDIwMDAwMDAyMDAyMDAyMDIwMDIyMjAyMDAyMDIwMDIyMjAyMDAwMDAwMDAyMDIyMjIwMDAwMjIyMjIyMjIwMjIwMjIyMg==",
+        "data": "MTAwYzAwMGEwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMTQxNjE1MTAxNzE3MDAxNzE3MTAwMTAxMTExMzEyMDAxODE4MjExODE4MDAwMTAxMGMwYjBkMDMyMjIzMjYyNDI1MDMwMTAxMDMwZTA0MDMwODA5MDkwOTA5MDcwMTAxMDMwMzA0MDQyMDAyMWMxYjAyMWYwMTAxMDQwMzA0MDQxZDAyMTkxYTAyMWUwMTAxMDQwNDI2MDMwNTBhMGEwYTBhMDYwMTAxMGMwYjI3MjYwNDA0MDQwYzBiMGQwMTAxMDEwMTAxMDEwMzBmMDEwMTAxMDEwMTIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIwMDAwMDAyMjAyMDIwMDAwMDAyMDAyMDAyMDIwMDIyMjAyMDAyMDIwMDIyMjAyMDAwMDAwMDAyMDIyMjIwMDAwMjIyMjIyMjIwMjIwMjIyMg==",
         "tileset": [
             "myTiles.transparency16",
             "myTiles.tile5",
@@ -976,44 +1025,10 @@
             "myTiles.tile91",
             "myTiles.tile100",
             "myTiles.tile102",
-            "myTiles.tile103"
+            "myTiles.tile103",
+            "myTiles.tile104"
         ],
         "displayName": "aruzi-heya"
-    },
-    "レベル3": {
-        "id": "レベル3",
-        "mimeType": "application/mkcd-tilemap",
-        "data": "MTAxNjAwMTEwMDAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTA1MDAwMDA1MDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDcwYjBhMDcwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwNzA4MDkwNzAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTA3MDcwNjA2MDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDAwMDAwMDAwMDAwMDcwNjA3MDcwMDAwMDAwMDAwMDAwMDAwMDEwMTAxMDEwNTBlMDUwMjA0MDMwNzA3MDcwNzA1MGYwZTA1MDAwMjAzMDUwMTAxMDEwMTA4MTQxMzA3MDcwNzA3MGIwYTA3MDcwODEzMDcwNzE4MTgwNzAxMDEwMTAxMDcwNzA3MDcwNzA3MDcwYzBkMDcwNzA3MDYwNjA3MDcwNzA3MDEwMTAxMDExNTA3MDcwNjA2MDcwNzBjMGQwNzA2MDcwNjA3MDcwNjA3MDYwMTAxMDEwMTE2MTcwNzA3MTgwNjA3MDgwOTA3MDcwNzA3MDcwNzA3MDcwNzAxMDEwMTAxMTUxMDExMTExOTA3MDcwNzA3MDcxMDExMTIwNjA3MTAxMTEyMDEwMTAxMDEwMTAxMDEwMTAxMDEwNzA3MDcwNjAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTA3MDcwNzA3MDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDAwMDAwMDAwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMDAwMDAwMDAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEwMTAxMWExYTAxMDEwMTAxMDEwMTAxMDEwMTAxMDEyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMDAwMDIyMjIyMjIyMjIyMjIyMjIyMjAwMDAyMjIyMjIyMjIyMjIyMjIyMjIwMDAwMjIyMjIyMjIyMjIyMjIyMjIyMDAwMDIyMjIyMjIyMjIyMjIyMjIyMjAwMDAyMjIyMjIyMjIyMjIwMDAwMDAwMDAwMDAwMDAwMDAyMjIyMDAwMDAwMDAwMDAwMDAwMDAwMjIyMjAyMDAwMDAwMDAwMDAwMDAwMDIyMjIyMjAwMDAwMDAwMDAwMDAwMDAyMjIyMjIyMjAyMDAwMDIyMDIyMDIyMjIyMjIyMjIyMjAwMDAyMjIyMjIyMjIyMjIyMjIyMjIwMDAwMjIyMjIyMjIyMjIyMjIyMjIyMDAwMDIyMjIyMjIyMjIyMjIyMjIyMjAwMDAyMjIyMjIyMjIyMjIyMjIyMjIwMjIwMjIyMjIyMjIyMg==",
-        "tileset": [
-            "myTiles.transparency16",
-            "myTiles.tile5",
-            "myTiles.tile46",
-            "myTiles.tile47",
-            "myTiles.tile45",
-            "myTiles.tile48",
-            "myTiles.tile51",
-            "myTiles.tile52",
-            "myTiles.tile56",
-            "myTiles.tile57",
-            "myTiles.tile58",
-            "myTiles.tile59",
-            "myTiles.tile62",
-            "myTiles.tile63",
-            "myTiles.tile64",
-            "myTiles.tile66",
-            "myTiles.tile67",
-            "myTiles.tile68",
-            "myTiles.tile69",
-            "myTiles.tile92",
-            "myTiles.tile94",
-            "myTiles.tile75",
-            "myTiles.tile76",
-            "myTiles.tile79",
-            "myTiles.tile19",
-            "myTiles.tile42",
-            "myTiles.tile33"
-        ],
-        "displayName": "yakata"
     },
     "*": {
         "mimeType": "image/x-mkcd-f4",
