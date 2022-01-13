@@ -77,6 +77,52 @@ controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
     true
     )
 })
+function YakataBGM1 () {
+    if (ikikaeri == 2) {
+        music.setTempo(40)
+        music.playTone(523, music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Eighth))
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(311, music.beat(BeatFraction.Eighth))
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(494, music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Eighth))
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(311, music.beat(BeatFraction.Eighth))
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(466, music.beat(BeatFraction.Eighth))
+        music.rest(music.beat(BeatFraction.Eighth))
+        music.playTone(494, music.beat(BeatFraction.Eighth))
+        music.playTone(587, music.beat(BeatFraction.Eighth))
+        music.playTone(523, music.beat(BeatFraction.Eighth))
+        music.playTone(494, music.beat(BeatFraction.Eighth))
+        music.playTone(466, music.beat(BeatFraction.Eighth))
+        music.playTone(523, music.beat(BeatFraction.Sixteenth))
+        music.playTone(494, music.beat(BeatFraction.Sixteenth))
+        music.playTone(440, music.beat(BeatFraction.Half))
+        music.playTone(415, music.beat(BeatFraction.Eighth))
+        music.rest(music.beat(BeatFraction.Eighth))
+        music.playTone(440, music.beat(BeatFraction.Eighth))
+        music.playTone(523, music.beat(BeatFraction.Eighth))
+        music.playTone(466, music.beat(BeatFraction.Eighth))
+        music.playTone(440, music.beat(BeatFraction.Eighth))
+        music.playTone(415, music.beat(BeatFraction.Eighth))
+        music.playTone(466, music.beat(BeatFraction.Sixteenth))
+        music.playTone(440, music.beat(BeatFraction.Sixteenth))
+        music.playTone(392, music.beat(BeatFraction.Half))
+        music.playTone(370, music.beat(BeatFraction.Eighth))
+        music.playTone(247, music.beat(BeatFraction.Eighth))
+        music.playTone(311, music.beat(BeatFraction.Eighth))
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(349, music.beat(BeatFraction.Eighth))
+        music.playTone(494, music.beat(BeatFraction.Eighth))
+        music.playTone(440, music.beat(BeatFraction.Quarter))
+        music.playTone(415, music.beat(BeatFraction.Eighth))
+        music.playTone(370, music.beat(BeatFraction.Eighth))
+        music.playTone(392, music.beat(BeatFraction.Eighth))
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+    }
+}
 function TheLastRoom () {
     if (idou > 0) {
         if (tsukue == 1 && (light2 == 1 && fire == 1)) {
@@ -125,6 +171,18 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`hito3`, function (sprite, loc
     }
     whoQuizMiss()
 })
+function HomeBGM2 () {
+    if (ikikaeri == 0) {
+        music.rest(music.beat(BeatFraction.Eighth))
+        music.rest(music.beat(BeatFraction.Eighth))
+        for (let index = 0; index < 5; index++) {
+            music.playTone(175, music.beat(BeatFraction.Quarter))
+            music.playTone(262, music.beat(BeatFraction.Half))
+            music.playTone(196, music.beat(BeatFraction.Quarter))
+            music.playTone(294, music.beat(BeatFraction.Half))
+        }
+    }
+}
 scene.onOverlapTile(SpriteKind.Player, assets.tile`hito2`, function (sprite, location) {
     if (controller.A.isPressed()) {
         game.showLongText("杖を持った人の絵画が飾られている", DialogLayout.Bottom)
@@ -132,15 +190,17 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`hito2`, function (sprite, loc
         pause(1000)
     }
     if (lastKey == 0) {
-        if (pins.P0.analogRead() > 100) {
+        if (controller.B.isPressed()) {
             game.showLongText("ボタンを押した", DialogLayout.Bottom)
             game.showLongText("絵画の裏からカギが落ちてきた", DialogLayout.Bottom)
             game.showLongText("これで出られるかもしれない", DialogLayout.Bottom)
             lastKey += 1
         }
     } else {
-        game.showLongText("もう反応しないようだ", DialogLayout.Bottom)
-        pause(1000)
+        if (controller.A.isPressed()) {
+            game.showLongText("もう反応しないようだ", DialogLayout.Bottom)
+            pause(1000)
+        }
     }
 })
 controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
@@ -280,6 +340,24 @@ function start1 () {
         100,
         true
         )
+        mySprite.setImage(img`
+            . . . . f f f f . . . . 
+            . . f f e e e e f f . . 
+            . f e e e e e e e f f . 
+            f f e f e e e e e e f f 
+            f f f e e e e e e e e f 
+            f f f e e e e e e f e f 
+            f f f f e e e e f f f f 
+            f f f f f f f f f f f f 
+            f f f f f f f f f f f f 
+            . f f f f f f f f f f . 
+            . e f f f f f f f f e . 
+            e 4 f b b b b b b f 4 e 
+            4 d f d d d d d d c d 4 
+            4 4 f 6 6 6 6 6 6 f 4 4 
+            . . . f f f f f f . . . 
+            . . . f f . . f f . . . 
+            `)
         story.spriteMoveToLocation(mySprite, 80, 55, 50)
         mySprite.setImage(img`
             . . . . f f f f . . . . 
@@ -755,7 +833,7 @@ controller.anyButton.onEvent(ControllerButtonEvent.Released, function () {
 })
 // 来るとき、帰るとき、自分の部屋
 scene.onOverlapTile(SpriteKind.Player, assets.tile`kabe3`, function (sprite, location) {
-    if (ikikaeri == 0) {
+    if (ikikaeri == 1) {
         mySprite.setPosition(160, 240)
         scene.setBackgroundColor(11)
         tiles.setTilemap(tilemap`yakata`)
@@ -788,12 +866,16 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`kabe3`, function (sprite, loc
             `, SpriteKind.ugoku)
         tiles.setWallAt(tiles.getTileLocation(3, 7), true)
         tiles.placeOnTile(mySprite2, tiles.getTileLocation(3, 7))
-    } else if (ikikaeri == 1 && lastKey == 1) {
+    } else if (ikikaeri == 2 && lastKey == 1) {
         scene.setBackgroundColor(15)
         tiles.setTilemap(tilemap`kaerimiti`)
+        mySprite2.destroy()
+        for (let 値 of sprites.allOfKind(SpriteKind.lightpi)) {
+            値.destroy()
+        }
         ikikaeri += 1
         mySprite.setPosition(110, 20)
-    } else if (ikikaeri == 2 && lastKey == 1) {
+    } else if (ikikaeri == 3 && lastKey == 1) {
         scene.setBackgroundColor(6)
         tiles.setTilemap(tilemap`home`)
         mySprite.setPosition(30, 40)
@@ -942,6 +1024,32 @@ controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
     true
     )
 })
+function YakataBGM2 () {
+    music.playTone(220, music.beat(BeatFraction.Quarter))
+    music.playTone(165, music.beat(BeatFraction.Quarter))
+    music.playTone(165, music.beat(BeatFraction.Quarter))
+    music.playTone(208, music.beat(BeatFraction.Quarter))
+    music.playTone(165, music.beat(BeatFraction.Quarter))
+    music.playTone(165, music.beat(BeatFraction.Quarter))
+    music.playTone(196, music.beat(BeatFraction.Quarter))
+    music.playTone(147, music.beat(BeatFraction.Quarter))
+    music.playTone(147, music.beat(BeatFraction.Quarter))
+    music.playTone(185, music.beat(BeatFraction.Quarter))
+    music.playTone(147, music.beat(BeatFraction.Quarter))
+    music.playTone(147, music.beat(BeatFraction.Quarter))
+    music.playTone(175, music.beat(BeatFraction.Quarter))
+    music.playTone(131, music.beat(BeatFraction.Quarter))
+    music.playTone(131, music.beat(BeatFraction.Quarter))
+    music.playTone(165, music.beat(BeatFraction.Quarter))
+    music.playTone(131, music.beat(BeatFraction.Quarter))
+    music.playTone(131, music.beat(BeatFraction.Quarter))
+    music.playTone(156, music.beat(BeatFraction.Quarter))
+    music.playTone(124, music.beat(BeatFraction.Quarter))
+    music.playTone(124, music.beat(BeatFraction.Quarter))
+    music.playTone(165, music.beat(BeatFraction.Quarter))
+    music.playTone(147, music.beat(BeatFraction.Quarter))
+    music.playTone(147, music.beat(BeatFraction.Quarter))
+}
 // 通路に移動
 scene.onOverlapTile(SpriteKind.Player, assets.tile`deiri`, function (sprite, location) {
     if (controller.A.isPressed()) {
@@ -977,8 +1085,9 @@ function lightFlowerMach () {
                     game.showLongText("スイッチを押してみよう", DialogLayout.Bottom)
                     pause(500)
                     light1 = 1
-                } else if (answer == "kevin" == (secret == 0)) {
-                    game.showLongText("ケヴィンの日記", DialogLayout.Bottom)
+                } else if (answer == "jack" == (secret == 0)) {
+                    game.showLongText("ケヴィンの日記", DialogLayout.Full)
+                    game.showLongText("以前は栄えた家系だが、屋敷も私の祖父の代から随分廃れてしまった。使用人の過半数が私を嫌い、時折あることない事を屋敷の外の者に吹聴している。しかし、もうそんな者さえ雇わざるを得ない状況だということだ。なんとも嘆かわしい。", DialogLayout.Full)
                     secret = 1
                 } else {
                     game.showLongText("反応がない。間違っているようだ。", DialogLayout.Bottom)
@@ -1003,7 +1112,7 @@ function lightFlowerMach () {
             }
         }
     } else if (light1 == 1 && light2 == 0) {
-        if (pins.P0.analogRead() > 100) {
+        if (controller.B.isPressed()) {
             for (let 値 of tiles.getTilesByType(assets.tile`lump`)) {
                 mySprite3 = sprites.create(img`
                     . . . . . . f f f f . . . . . . 
@@ -1025,7 +1134,7 @@ function lightFlowerMach () {
                     `, SpriteKind.lightpi)
                 tiles.placeOnTile(mySprite3, 値)
             }
-            game.showLongText("明かりがついたか確かめに行こう", DialogLayout.Bottom)
+            game.showLongText("明かりがついた", DialogLayout.Bottom)
             pause(500)
             light2 = 1
             TheLastRoom()
@@ -1186,6 +1295,7 @@ controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
 // 自分の部屋から
 scene.onOverlapTile(SpriteKind.Player, assets.tile`kuro-zet1`, function (sprite, location) {
     if (osiire == 1) {
+        ikikaeri += 1
         scene.setBackgroundColor(15)
         mySprite.setPosition(130, 210)
         tiles.setTilemap(tilemap`miti`)
@@ -1231,14 +1341,56 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`WhoAndMemo`, function (sprite
                 game.showLongText("日誌が置いてある", DialogLayout.Full)
             }
         } else if (idou == 4) {
-            if (mySprite.y > 100) {
+            if (mySprite.y < 100) {
                 game.showLongText("「本当の私は誰だ」と書かれている", DialogLayout.Bottom)
             } else {
-                game.showLongText("日誌が置いてある", DialogLayout.Full)
+                game.showLongText("エマ「マイクは正直」 ケイト「ビルの言っていることは嘘」マイク「エマとケイトのどちらかが嘘つき」ビル「エマとマイクはどちらも嘘つき」", DialogLayout.Full)
             }
         }
     }
 })
+function HomeBGM1 () {
+    if (ikikaeri == 0) {
+        music.setTempo(30)
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(349, music.beat(BeatFraction.Eighth))
+        music.playTone(392, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Eighth))
+        music.playTone(349, music.beat(BeatFraction.Eighth))
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(262, music.beat(BeatFraction.Eighth))
+        music.playTone(247, music.beat(BeatFraction.Quarter))
+        music.playTone(196, music.beat(BeatFraction.Quarter))
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(349, music.beat(BeatFraction.Eighth))
+        music.playTone(392, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Eighth))
+        music.playTone(440, music.beat(BeatFraction.Eighth))
+        music.playTone(349, music.beat(BeatFraction.Eighth))
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(294, music.beat(BeatFraction.Quarter))
+        music.playTone(247, music.beat(BeatFraction.Quarter))
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(349, music.beat(BeatFraction.Eighth))
+        music.playTone(392, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Eighth))
+        music.playTone(349, music.beat(BeatFraction.Eighth))
+        music.playTone(330, music.beat(BeatFraction.Eighth))
+        music.playTone(262, music.beat(BeatFraction.Eighth))
+        music.playTone(247, music.beat(BeatFraction.Quarter))
+        music.playTone(196, music.beat(BeatFraction.Quarter))
+        music.rest(music.beat(BeatFraction.Eighth))
+        music.playTone(196, music.beat(BeatFraction.Eighth))
+        music.playTone(220, music.beat(BeatFraction.Quarter))
+        music.playTone(349, music.beat(BeatFraction.Half))
+        music.playTone(247, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Half))
+        music.playTone(220, music.beat(BeatFraction.Quarter))
+        music.playTone(349, music.beat(BeatFraction.Half))
+        music.playTone(247, music.beat(BeatFraction.Quarter))
+        music.playTone(392, music.beat(BeatFraction.Quarter))
+    }
+}
 // 食事場所and棚を移動させるやつ
 scene.onOverlapTile(SpriteKind.Player, assets.tile`mesi-ido`, function (sprite, location) {
     if (controller.A.isPressed()) {
@@ -1283,7 +1435,7 @@ scene.onOverlapTile(SpriteKind.Player, assets.tile`mesi-ido`, function (sprite, 
             pause(500)
         }
     }
-    if (pins.P1.analogRead() > 500) {
+    if (controller.B.isPressed()) {
         if (SensurOsu == 0) {
             story.startCutscene(function () {
                 tiles.setWallAt(tiles.getTileLocation(3, 7), false)
@@ -1329,3 +1481,10 @@ machi = 0
 fire = 0
 lastKey = 0
 start1()
+forever(function () {
+    HomeBGM1()
+    YakataBGM1()
+})
+forever(function () {
+    HomeBGM2()
+})
